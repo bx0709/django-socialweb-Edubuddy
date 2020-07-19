@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="p-5">
+	<h1 class="myhead2">{{myprofile.name}}</h1>
+	<hr>
+<div class="row">
+	<div class="col-sm-6">
+	<p><strong>College :: </strong> {{myprofile.college}}</p>
+	<p><strong>Gender :: </strong> {{myprofile.gender}}</p>
+	<p><strong>Degree :: </strong> {{myprofile.degree}}</p>
+	<p><strong>Passing Year :: </strong> {{myprofile.passing_year}}</p>
+	<p><strong>Interested :: </strong> {{myprofile.interested}}</p>
+	<p><strong>Hobbies :: </strong> {{myprofile.hobbies}}</p>
+	</div>
+	<div class="col-sm-6">
+		<img class="img-fluid" src="/media/{{myprofile.pic}}" />
+	</div>
+</div>
+<a href="/social/myprofile" class="btn btn-dark">Back</a>
+</div>
+{% endblock %}
